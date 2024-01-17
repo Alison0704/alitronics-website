@@ -10,10 +10,10 @@ body{
       "Source Han Sans CN", sans-serif;
   }  
   .main-background{
-   position: relative;
     overflow-x: hidden;
   }
   .nav-bar {
+    display: inline-flex;
     position: relative;
     height: 75px;
     width: 100%;
@@ -36,149 +36,66 @@ body{
     -webkit-text-stroke: 2px #ffffff;
   }
   .nav-selection {
-    position: absolute;
-    top: 0;
-    left: 630px;
-    z-index: 86;
-  }
+    display: flex;
+    /*TODO */  }
   .home-tab {
-    position: absolute;
+    position: relative;
     width: 110px;
     height: 51px;
-    top: 24px;
     background: #94e8b4;
-    z-index: 86;
     border-radius: 25px 25px 0 0;
   }
   .home-name {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 26px;
-    top: 18px;
-    left: 31px;
-    color: #000000;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 87;
+   /*TODO */
   }
   .about-me-tab {
-    position: absolute;
+    position: relative;
     width: 110px;
     height: 51px;
-    top: 24px;
-    left: 130px;
     background: #72bda3;
-    z-index: 83;
     border-radius: 25px 25px 0 0;
   }
   .about-me-name {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 26px;
-    top: 18px;
-    left: 7px;
-    color: #000000;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 84;
-  }
+   /*TODO */
+   }
   .skills-tab {
-    position: absolute;
+    position: relative;
     width: 110px;
     height: 51px;
-    top: 24px;
-    left: 260px;
     background: #5e8c61;
-    z-index: 80;
     border-radius: 25px 25px 0 0;
   }
   .skills-name {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 26px;
-    top: 18px;
-    left: 19px;
-    color: #000000;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 81;
+    /*TODO */
   }
   .projects-tab {
-    position: absolute;
+    position: relative;
     width: 110px;
     height: 51px;
-    top: 24px;
-    left: 390px;
     background: #4e6151;
-    z-index: 77;
     border-radius: 25px 25px 0 0;
   }
   .projects-name {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 26px;
-    top: 18px;
-    left: 7px;
-    color: #ffffff;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 78;
+    /*TODO */
   }
   .contact-tab {
-    position: absolute;
+    position: relative;
     width: 110px;
     height: 49px;
-    top: 26px;
-    left: 520px;
     background: #3b322c;
-    z-index: 74;
     border-radius: 25px 25px 0 0;
   }
   .contact-name {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 26px;
-    top: 16px;
-    left: 13px;
-    color: #ffffff;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 75;
+    /*TODO */
   }
   .background-home {
     position: relative;
     height: 772px;
-    width: 1280px;
     left: 5%;
     background: #94e8b4;
     border-radius: 30px 0 0 30px;
@@ -186,7 +103,6 @@ body{
   .line {
     margin-top: 30px;
     margin-bottom: 30px ;
-    width: 1280px;
     left: 5%;
     border: 5px dashed;
     border-radius: 50%;
@@ -194,7 +110,6 @@ body{
   }
   .background-about-me {
     position: relative;
-    width: 1280px;
     height: 772px;
     left: 5%;
     font-size: 0px;
@@ -257,14 +172,12 @@ body{
   }
   .background-skills {
     position: relative;
-    width: 1280px;
     height: 772px;
-    margin: 35px 0 0 116px;
+    left: 5%;
     font-size: 0px;
-    background: #5e8c61;
-    z-index: 55;
     overflow: visible auto;
     border-radius: 30px 0 0 30px;
+    background: #5e8c61;
   }
   .title-2 {
     display: flex;
@@ -356,14 +269,13 @@ body{
   }
   .background-project {
     position: relative;
-    width: 1280px;
     height: 1752px;
-    margin: 36px 0 0 116px;
+    left: 5%;
     font-size: 0px;
-    background: #4e6151;
-    z-index: 30;
     overflow: visible auto;
     border-radius: 30px 0 0 30px;
+    font-size: 0px;
+    background: #4e6151;
   }
   .projects-title {
     display: flex;
@@ -639,14 +551,12 @@ body{
   }
   .background-contact-me {
     position: relative;
-    width: 1280px;
-    height: 513px;
-    margin: 35px 0 0 116px;
+    left: 5%;
     font-size: 0px;
-    background: #3b322c;
-    z-index: 11;
     overflow: visible auto;
     border-radius: 30px 0 0 30px;
+    height: 513px;
+    background: #3b322c;;
   }
   .lets-connect-title {
     display: block;
@@ -839,14 +749,14 @@ body{
   }
   
   .background-follow-me {
-    position: absolute;
-    width: 1280px;
-    height: 127px;
-    top: 0;
-    left: 4px;
-    background: #000000;
-    z-index: 2;
+    position: relative;
+    left: 5%;
+    font-size: 0px;
+    overflow: visible auto;
     border-radius: 30px 0 0 30px;
+    height: 127px;
+    background: #000000;
+
   }
   .appreciations-button-shape {
     position: absolute;
