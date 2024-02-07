@@ -21,32 +21,35 @@ justify-content: center;}
     width: 100%;}
 .nav-selection {
     display:flex;
+    
     position: relative;}
 .tab{
     position: relative;
     width: 110px;
     height: 51px;
     border-radius: 25px 25px 0 0; }
-.tab.text {
+  .tab.space{
+  margin: 0 0.5rem 0 0.5rem;}
+  .tab.text {
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;  }
-.tab.text.white {
+  .tab.text.white {
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;} 
-  #home-tab-color {
-    background: #94e8b4;}
-  #about-me-tab-color {
-    background: #72bda3;}
-  #skills-tab-color {
-    background: #5e8c61;}
-  #projects-tab-color {
-    background: #4e6151;}
-  #contact-tab-color {
+    #home-tab-color {
+      background: #94e8b4;}
+    #about-me-tab-color {
+      background: #72bda3;}
+    #skills-tab-color {
+      background: #5e8c61;}
+    #projects-tab-color {
+      background: #4e6151;}
+    #contact-tab-color {
     background: #3b322c;}
 
 /*Home Art Section*/
