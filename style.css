@@ -1,134 +1,81 @@
+/*Overall*/
 body{
  margin:0;
  padding: 0;
- background: #3f3f3f;
-}
+ background: #3f3f3f;}
 :root {
     --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
       "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
-      "Source Han Sans CN", sans-serif;
-  }  
-  .main-background{
-    overflow-x: hidden;
-  }
-  .nav-bar {
-    display: inline-flex;
-    position: relative;
-    height: 75px;
-    width: 100%;
-    }
-  .alitronics-logo {
+      "Source Han Sans CN", sans-serif;}  
+
+/*Navigation Bar*/
+.nav-bar {
+display:flex;
+position: relative;
+margin: 1% 5% 0 5%;
+justify-content: center;}
+.space {
     display: flex;
+    position: relative;
+    width: 100%;}
+.nav-selection {
+    display:flex;
+    position: relative;}
+.tab{
+    position: relative;
+    width: 110px;
+    height: 51px;
+    border-radius: 25px 25px 0 0; }
+.tab.text {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;  }
+.tab.text.white {
+    position: relative;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    color: transparent;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 42px;
-    text-align: center;
-    white-space: nowrap;
-    letter-spacing: 3.2px;
-    z-index: 88;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    -webkit-text-stroke: 2px #ffffff;
-  }
-  .nav-selection {
-    display: flex;
-    /*TODO */  }
-  .home-tab {
-    position: relative;
-    width: 110px;
-    height: 51px;
-    background: #94e8b4;
-    border-radius: 25px 25px 0 0;
-  }
-  .home-name {
-    display: flex;
-   /*TODO */
-  }
-  .about-me-tab {
-    position: relative;
-    width: 110px;
-    height: 51px;
-    background: #72bda3;
-    border-radius: 25px 25px 0 0;
-  }
-  .about-me-name {
-    display: flex;
-   /*TODO */
-   }
-  .skills-tab {
-    position: relative;
-    width: 110px;
-    height: 51px;
-    background: #5e8c61;
-    border-radius: 25px 25px 0 0;
-  }
-  .skills-name {
-    display: flex;
-    /*TODO */
-  }
-  .projects-tab {
-    position: relative;
-    width: 110px;
-    height: 51px;
-    background: #4e6151;
-    border-radius: 25px 25px 0 0;
-  }
-  .projects-name {
-    display: flex;
-    /*TODO */
-  }
-  .contact-tab {
-    position: relative;
-    width: 110px;
-    height: 49px;
-    background: #3b322c;
-    border-radius: 25px 25px 0 0;
-  }
-  .contact-name {
-    display: flex;
-    /*TODO */
-  }
-  .background-home {
+    color: #ffffff;} 
+  #home-tab-color {
+    background: #94e8b4;}
+  #about-me-tab-color {
+    background: #72bda3;}
+  #skills-tab-color {
+    background: #5e8c61;}
+  #projects-tab-color {
+    background: #4e6151;}
+  #contact-tab-color {
+    background: #3b322c;}
+
+/*Home Art Section*/
+/*TODO Last*/
+.background-home {
     position: relative;
     height: 772px;
     margin: 0% 5% 0% 5%;
     background: #94e8b4;
-    border-radius: 30px 30px 30px 30px; 
-   }
-  .line {
-    margin-top: 30px;
-    margin-bottom: 30px ;
-    left: 5%;
-    border: 5px dashed;
-    border-radius: 50%;
-    color: #ffffff;
-  }
-  .background-about-me {
+    border-radius: 30px 30px 30px 30px; }
+.background-about-me {
     position: relative;
     height: 772px;
     margin: 0% 5% 0% 5%;
     font-size: 0px;
     background: #72bda3;
-    border-radius: 30px 30px 30px 30px;
-  }
-  .about-me-content {
+    border-radius: 30px 30px 30px 30px;}
+.about-me-content {
     display: flex;
     align-items: center;}
-  .title {
+.title {
     color: #ffffff;
     font-family: Keania One, var(--default-font-family);
     font-size: 60px;
     font-weight: 400;
     line-height: 73px;
     white-space: nowrap;
-    letter-spacing: 6px;
-  }
-  .description-about-me {
+    letter-spacing: 6px;}
+.description-about-me {
     width: 540px;
     height: 455px;
     color: #000000;
@@ -137,99 +84,91 @@ body{
     font-weight: 400;
     line-height: 24.34px;
     text-align: left;
-    letter-spacing: 2px;
-  }
-  
-  .about-me-text{
-    flex-direction: row;
-  }
-  .self-picture {
-    width: 370px;
-    height: 487px;
-    background: #d9d9d9;
-    border-radius: 20px;
-  }
-  .background-skills {
-    position: relative;
-    height: 772px;
-    margin: 0% 5% 0% 5%;
-    font-size: 0px;
-    overflow: visible auto;
-    border-radius: 30px 30px 30px 30px;  
-    background: #5e8c61;
-  }
-  .title-2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    width: 645px;
-    height: 73px;
-    margin: 71px 0 0 327px;
-    color: #ffffff;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 73px;
-    text-align: center;
-    white-space: nowrap;
-    letter-spacing: 6px;
-    z-index: 62;
-  }
-  .flex-row-a {
-    position: relative;
-    width: 1017px;
-    height: 455px;
-    margin: 54px 0 0 130px;
-    z-index: 61;
-  }
-  .left-description-skill {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    width: 443px;
-    height: 455px;
-    top: 0;
-    left: 0;
-    color: #000000;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.34px;
-    text-align: left;
-    letter-spacing: 2px;
-    z-index: 61;
-  }
-  .right-description-skill {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    width: 444px;
-    height: 455px;
-    top: 0;
-    left: 573px;
-    color: #000000;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.34px;
-    text-align: left;
-    letter-spacing: 2px;
-    z-index: 60;
-  }
-  .lets-explore-button-shape {
-    position: absolute;
-    width: 280px;
-    height: 69px;
-    top: 386px;
-    left: 370px;
-    background: #d9d9d9;
-    z-index: 57;
-    border-radius: 50px;
-  }
-  .lets-explore {
+    letter-spacing: 2px;} 
+.about-me-text{
+  flex-direction: row;}
+.self-picture {
+  width: 370px;
+  height: 487px;
+  background: #d9d9d9;
+  border-radius: 20px;}
+
+/*Skills showcase section*/
+.background-skills {
+  position: relative;
+  height: 772px;
+  margin: 0% 5% 0% 5%;
+  font-size: 0px;
+  overflow: visible auto;
+  border-radius: 30px 30px 30px 30px;  
+  background: #5e8c61;}
+.title-2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 645px;
+  height: 73px;
+  margin: 71px 0 0 327px;
+  color: #ffffff;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 73px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 6px;
+  z-index: 62;}
+.flex-row-a {
+  position: relative;
+  width: 1017px;
+  height: 455px;
+  margin: 54px 0 0 130px;
+  z-index: 61;}
+.left-description-skill {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 443px;
+  height: 455px;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.34px;
+  text-align: left;
+  letter-spacing: 2px;
+  z-index: 61;}
+.right-description-skill {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 444px;
+  height: 455px;
+  top: 0;
+  left: 573px;
+  color: #000000;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.34px;
+  text-align: left;
+  letter-spacing: 2px;
+  z-index: 60;}
+.lets-explore-button-shape {
+  position: absolute;
+  width: 280px;
+  height: 69px;
+  top: 386px;
+  left: 370px;
+  background: #d9d9d9;
+  z-index: 57;
+  border-radius: 50px;}
+.lets-explore {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -244,273 +183,255 @@ body{
     line-height: 29px;
     text-align: left;
     white-space: nowrap;
-    z-index: 58;
-  }
-  .background-project {
-    position: relative;
-    height: 1752px;
-    margin: 0% 5% 0% 5%;
-    font-size: 0px;
-    overflow: visible auto;
-    border-radius: 30px 30px 30px 30px;
-    font-size: 0px;
-    background: #4e6151;
-  }
-  .projects-title {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    width: 258px;
-    height: 73px;
-    margin: 59px 0 0 520px;
-    color: #ffffff;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 73px;
-    text-align: center;
-    white-space: nowrap;
-    letter-spacing: 6px;
-    z-index: 52;
-  }
-  .flex-row-bf {
-    position: relative;
-    width: 1040px;
-    height: 378px;
-    margin: 81px 0 0 110px;
-    z-index: 51;
-  }
-  .project-title {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    width: 246px;
-    height: 49px;
-    top: 0;
-    left: 540px;
-    color: transparent;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 48.68px;
-    text-align: center;
-    white-space: nowrap;
-    letter-spacing: 4px;
-    z-index: 50;
-    -webkit-text-stroke: 3px #ffffff;
-  }
-  .engineering-logo {
-    position: absolute;
-    width: 360px;
-    height: 360px;
-    top: 18px;
-    left: 0;
-    background: url(./assets/images/38d625c0-e365-4f70-982a-9f82dc94f884.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 51;
-    border-radius: 50%;
-  }
-  .description {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    width: 501px;
-    height: 167px;
-    top: 58px;
-    left: 539px;
-    color: #b4b4b4;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.34px;
-    text-align: left;
-    letter-spacing: 2px;
-    z-index: 49;
-  }
-  .button-shape {
-    position: absolute;
-    width: 185px;
-    height: 55px;
-    top: 256px;
-    left: 683px;
-    background: #d9d9d9;
-    z-index: 47;
-    border-radius: 50px;
-  }
-  .view-projects {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 23px;
-    top: 16px;
-    left: 26px;
-    color: #000000;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.906px;
-    text-align: left;
-    white-space: nowrap;
-    letter-spacing: 1.8px;
-    z-index: 48;
-  }
-  .project-title-4 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    width: 272px;
-    height: 49px;
-    margin: 115px 0 0 130px;
-    color: transparent;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 48.68px;
-    text-align: center;
-    white-space: nowrap;
-    letter-spacing: 4px;
-    z-index: 43;
-    -webkit-text-stroke: 3px #ffffff;
-  }
-  .flex-row-de {
-    position: relative;
-    width: 1040px;
-    height: 360px;
-    margin: -9px 0 0 130px;
-    z-index: 44;
-  }
-  .programming-logo {
-    position: absolute;
-    width: 360px;
-    height: 360px;
-    top: 0;
-    left: 680px;
-    background: url(./assets/images/5a60ba2e-8109-4e75-bc64-45dcb47fc02e.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 44;
-    border-radius: 50%;
-  }
-  .description-5 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    width: 501px;
-    height: 263px;
-    top: 27px;
-    left: 0;
-    color: #b4b4b4;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.34px;
-    text-align: left;
-    letter-spacing: 2px;
-    z-index: 42;
-  }
-  .button-shape-6 {
-    position: absolute;
-    width: 185px;
-    height: 55px;
-    top: 290px;
-    left: 136px;
-    background: #d9d9d9;
-    z-index: 40;
-    border-radius: 50px;
-  }
-  .view-projects-7 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 23px;
-    top: 16px;
-    left: 26px;
-    color: #000000;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.906px;
-    text-align: left;
-    white-space: nowrap;
-    letter-spacing: 1.8px;
-    z-index: 41;
-  }
-  .flex-row-a-8 {
-    position: relative;
-    width: 1041px;
-    height: 376px;
-    margin: 155px 0 0 110px;
-    z-index: 37;
-  }
-  .art-logo {
-    position: absolute;
-    width: 360px;
-    height: 360px;
-    top: 0;
-    left: 0;
-    background: url(./assets/images/ec880efe-e01b-4477-9646-59f9a9526449.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 37;
-    border-radius: 50%;
-  }
-  .project-title-9 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: absolute;
-    width: 353px;
-    height: 49px;
-    top: 0;
-    left: 540px;
-    color: transparent;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 48.68px;
-    text-align: center;
-    white-space: nowrap;
-    letter-spacing: 4px;
-    z-index: 36;
-    -webkit-text-stroke: 3px #ffffff;
-  }
-  .description-a {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    width: 501px;
-    height: 263px;
-    top: 58px;
-    left: 540px;
-    color: #b4b4b4;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.34px;
-    text-align: left;
-    letter-spacing: 2px;
-    z-index: 35;
-  }
-  .button-shape-b {
-    position: absolute;
-    width: 185px;
-    height: 55px;
-    top: 321px;
-    left: 680px;
-    background: #d9d9d9;
-    z-index: 33;
-    border-radius: 50px;
-  }
-  .view-projects-c {
+    z-index: 58;}
+  
+/*Project showcase section*/
+.background-project {
+  position: relative;
+  height: 1752px;
+  margin: 0% 5% 0% 5%;
+  font-size: 0px;
+  overflow: visible auto;
+  border-radius: 30px 30px 30px 30px;
+  font-size: 0px;
+  background: #4e6151;}
+.projects-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 258px;
+  height: 73px;
+  margin: 59px 0 0 520px;
+  color: #ffffff;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 73px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 6px;
+  z-index: 52;}
+.flex-row-bf {
+  position: relative;
+  width: 1040px;
+  height: 378px;
+  margin: 81px 0 0 110px;
+  z-index: 51;}
+.project-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 246px;
+  height: 49px;
+  top: 0;
+  left: 540px;
+  color: transparent;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.68px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 4px;
+  z-index: 50;
+  -webkit-text-stroke: 3px #ffffff;}
+.engineering-logo {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  top: 18px;
+  left: 0;
+  background: url(./assets/images/38d625c0-e365-4f70-982a-9f82dc94f884.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 51;
+  border-radius: 50%;}
+.description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 501px;
+  height: 167px;
+  top: 58px;
+  left: 539px;
+  color: #b4b4b4;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.34px;
+  text-align: left;
+  letter-spacing: 2px;
+  z-index: 49;}
+.button-shape {
+  position: absolute;
+  width: 185px;
+  height: 55px;
+  top: 256px;
+  left: 683px;
+  background: #d9d9d9;
+  z-index: 47;
+  border-radius: 50px;}
+.view-projects {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 23px;
+  top: 16px;
+  left: 26px;
+  color: #000000;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.906px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: 1.8px;
+  z-index: 48;}
+.project-title-4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 272px;
+  height: 49px;
+  margin: 115px 0 0 130px;
+  color: transparent;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.68px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 4px;
+  z-index: 43;
+  -webkit-text-stroke: 3px #ffffff; }
+.flex-row-de {
+  position: relative;
+  width: 1040px;
+  height: 360px;
+  margin: -9px 0 0 130px;
+  z-index: 44 }
+.programming-logo {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  top: 0;
+  left: 680px;
+  background: url(./assets/images/5a60ba2e-8109-4e75-bc64-45dcb47fc02e.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 44;
+  border-radius: 50%;}
+.description-5 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 501px;
+  height: 263px;
+  top: 27px;
+  left: 0;
+  color: #b4b4b4;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.34px;
+  text-align: left;
+  letter-spacing: 2px;
+  z-index: 42;}
+.button-shape-6 {
+  position: absolute;
+  width: 185px;
+  height: 55px;
+  top: 290px;
+  left: 136px;
+  background: #d9d9d9;
+  z-index: 40;
+  border-radius: 50px;}
+.view-projects-7 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 23px;
+  top: 16px;
+  left: 26px;
+  color: #000000;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.906px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: 1.8px;
+  z-index: 41;}
+.flex-row-a-8 {
+  position: relative;
+  width: 1041px;
+  height: 376px;
+  margin: 155px 0 0 110px;
+  z-index: 37;}
+.art-logo {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  top: 0;
+  left: 0;
+  background: url(./assets/images/ec880efe-e01b-4477-9646-59f9a9526449.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 37;
+  border-radius: 50%;}
+.project-title-9 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 353px;
+  height: 49px;
+  top: 0;
+  left: 540px;
+  color: transparent;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.68px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 4px;
+  z-index: 36;
+  -webkit-text-stroke: 3px #ffffff;}
+.description-a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 501px;
+  height: 263px;
+  top: 58px;
+  left: 540px;
+  color: #b4b4b4;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.34px;
+  text-align: left;
+  letter-spacing: 2px;
+  z-index: 35;}
+.button-shape-b {
+  position: absolute;
+  width: 185px;
+  height: 55px;
+  top: 321px;
+  left: 680px;
+  background: #d9d9d9;
+  z-index: 33;
+  border-radius: 50px;}
+.view-projects-c {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -526,196 +447,182 @@ body{
     text-align: left;
     white-space: nowrap;
     letter-spacing: 1.8px;
-    z-index: 34;
-  }
-  .background-contact-me {
-    position: relative;
-    margin: 0% 5% 0% 5%;
-    font-size: 0px;
-    overflow: visible auto;
-    border-radius: 30px 30px 30px 30px;
-    height: 513px;
-    background: #3b322c;;
-  }
-  .lets-connect-title {
-    display: block;
-    position: relative;
-    height: 72.893px;
-    margin: 39.885px 0 0 395px;
-    color: #ffffff;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 52.8px;
-    text-align: left;
-    white-space: nowrap;
-    letter-spacing: 12px;
-    z-index: 27;
-  }
-  .flex-row-cec {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 729px;
-    height: 28px;
-    margin: 5.222px 0 0 130px;
-    z-index: 26;
-  }
-  .name {
-    flex-shrink: 0;
-    position: relative;
-    height: 26px;
-    color: #ffffff;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 26;
-  }
-  .email {
-    flex-shrink: 0;
-    position: relative;
-    height: 26px;
-    color: #ffffff;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 25;
-  }
-  .message {
-    display: block;
-    position: relative;
-    height: 26px;
-    margin: 29px 0 0 130px;
-    color: #ffffff;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 24;
-  }
-  .flex-row-cd {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 1060px;
-    height: 58px;
-    margin: -2px 0 0 110px;
-    z-index: 18;
-  }
-  .name-input-box {
-    flex-shrink: 0;
-    position: relative;
-    width: 410px;
-    height: 58px;
-    background: #d9d9d9;
-    z-index: 16;
-    border-radius: 50px;
-  }
-  .enter-name {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 26px;
-    top: 16px;
-    left: 20px;
-    color: #000000;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    opacity: 0.4000000059604645;
-    z-index: 22;
-  }
-  .email-input-box {
-    flex-shrink: 0;
-    position: relative;
-    width: 410px;
-    height: 58px;
-    background: #d9d9d9;
-    z-index: 18;
-    border-radius: 50px;
-  }
-  .enter-email {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 26px;
-    top: 16px;
-    left: 20px;
-    color: #000000;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    opacity: 0.4000000059604645;
-    z-index: 21;
-  }
-  .message-input-box {
-    position: relative;
-    width: 1060px;
-    height: 142px;
-    margin: 2px 0 0 110px;
-    background: #d9d9d9;
-    z-index: 20;
-    border-radius: 50px;
-  }
-  .enter-message {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    height: 26px;
-    top: 27px;
-    left: 20px;
-    color: #000000;
-    font-family: JetBrains Mono, var(--default-font-family);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: left;
-    white-space: nowrap;
-    opacity: 0.4000000059604645;
-    z-index: 20;
-  }
-  .send-shape {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 185px;
-    height: 55px;
-    margin: 28px 0 0 548px;
-    background: #d9d9d9;
-    z-index: 14;
-    border-radius: 50px;
-  }
-  .send-text {
-    flex-shrink: 0;
-    position: relative;
-    height: 22px;
-    color: #000000;
-    font-family: Keania One, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.906px;
-    text-align: left;
-    white-space: nowrap;
-    letter-spacing: 1.8px;
-    z-index: 14;
-  }
+    z-index: 34;}
+  
+/*Contact me section*/
+.background-contact-me {
+  position: relative;
+  margin: 0% 5% 0% 5%;
+  font-size: 0px;
+  overflow: visible auto;
+  border-radius: 30px 30px 30px 30px;
+  height: 513px;
+  background: #3b322c;;}
+.lets-connect-title {
+  display: block;
+  position: relative;
+  height: 72.893px;
+  margin: 39.885px 0 0 395px;
+  color: #ffffff;
+  font-family: JetBrains Mono, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52.8px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: 12px;
+  z-index: 27;}
+.flex-row-cec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 729px;
+  height: 28px;
+  margin: 5.222px 0 0 130px;
+  z-index: 26;}
+.name {
+  flex-shrink: 0;
+  position: relative;
+  height: 26px;
+  color: #ffffff;
+  font-family: JetBrains Mono, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 26;}
+.email {
+  flex-shrink: 0;
+  position: relative;
+  height: 26px;
+  color: #ffffff;
+  font-family: JetBrains Mono, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 25;}
+.message {
+  display: block;
+  position: relative;
+  height: 26px;
+  margin: 29px 0 0 130px;
+  color: #ffffff;
+  font-family: JetBrains Mono, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 24;}
+.flex-row-cd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 1060px;
+  height: 58px;
+  margin: -2px 0 0 110px;
+  z-index: 18}
+.name-input-box {
+  flex-shrink: 0;
+  position: relative;
+  width: 410px;
+  height: 58px;
+  background: #d9d9d9;
+  z-index: 16;
+  border-radius: 50px;}
+.enter-name {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 26px;
+  top: 16px;
+  left: 20px;
+  color: #000000;
+  font-family: JetBrains Mono, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  white-space: nowrap;
+  opacity: 0.4000000059604645;
+  z-index: 22;}
+.email-input-box {
+  flex-shrink: 0;
+  position: relative;
+  width: 410px;
+  height: 58px;
+  background: #d9d9d9;
+  z-index: 18;
+  border-radius: 50px;}
+.enter-email {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 26px;
+  top: 16px;
+  left: 20px;
+  color: #000000;
+  font-family: JetBrains Mono, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  white-space: nowrap;
+  opacity: 0.4000000059604645;
+  z-index: 21;}
+.message-input-box {
+  position: relative;
+  width: 1060px;
+  height: 142px;
+  margin: 2px 0 0 110px;
+  background: #d9d9d9;
+  z-index: 20;
+  border-radius: 50px;}
+.enter-message {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 26px;
+  top: 27px;
+  left: 20px;
+  color: #000000;
+  font-family: JetBrains Mono, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  white-space: nowrap;
+  opacity: 0.4000000059604645;
+  z-index: 20;}
+.send-shape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 185px;
+  height: 55px;
+  margin: 28px 0 0 548px;
+  background: #d9d9d9;
+  z-index: 14;
+  border-radius: 50px;}
+.send-text {
+  flex-shrink: 0;
+  position: relative;
+  height: 22px;
+  color: #000000;
+  font-family: Keania One, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.906px;
+  text-align: left;
+  white-space: nowrap;
+  letter-spacing: 1.8px;
+  z-index: 14;}
